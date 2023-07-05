@@ -196,7 +196,7 @@ console.log(eyeColor);
 
 console.log("6 - ************************************************************");
 
-let crewNumber = starWarsCharacters.length;
+const crewNumber = starWarsCharacters.length;
 let count = 0;
 let crewMass = 0;
 
@@ -248,8 +248,8 @@ console.log(starWarsCharacters);
 
 console.log("9 - ************************************************************");
 
-console.log(femaleCharacters);
 console.log(characters);
+
 for (let i = 0; i < femaleCharacters.length; i++) {
   for (let j = 0; j < characters.length; j++) {
     if (femaleCharacters[i].name === characters[j]) {
