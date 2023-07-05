@@ -127,7 +127,7 @@ const femaleCharacters = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female") {
-    femaleCharacters.push(starWarsCharacters[i].name);
+    femaleCharacters.push(starWarsCharacters[i]);
   }
 }
 
@@ -230,9 +230,13 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 
+console.log("*********************************************************");
+
+console.log(femaleCharacters);
+console.log(characters);
 for (let i = 0; i < femaleCharacters.length; i++) {
   for (let j = 0; j < characters.length; j++) {
-    if (femaleCharacters[i] === characters[j]) {
+    if (femaleCharacters[i].name === characters[j]) {
       characters.splice(j, 1);
     }
   }
