@@ -104,6 +104,7 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
+console.log("1 - ************************************************************");
 
 const characters = [];
 
@@ -112,6 +113,8 @@ const characters = [];
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "starWarsCharacters" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
+
+console.log("2 - ************************************************************");
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
@@ -122,6 +125,8 @@ console.log(characters);
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
+
+console.log("3 - ************************************************************");
 
 const femaleCharacters = [];
 
@@ -138,6 +143,8 @@ console.log(femaleCharacters);
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
 
+console.log("4 - ************************************************************");
+
 const eyeColor = {
   blue: [],
   yellow: [],
@@ -150,8 +157,11 @@ const eyeColor = {
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+
+console.log("5 - ************************************************************");
+
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  switch (starWarsCharacters[i].gender) {
+  switch (starWarsCharacters[i].eye_color) {
     case "blue":
       eyeColor.blue.push(starWarsCharacters[i]);
       break;
@@ -184,6 +194,8 @@ console.log(eyeColor);
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 
+console.log("6 - ************************************************************");
+
 let crewNumber = starWarsCharacters.length;
 let count = 0;
 let crewMass = 0;
@@ -207,6 +219,8 @@ console.log("crewMass =", crewMass);
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+console.log("7 - ************************************************************");
+
 if (crewMass > 1000) console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
 else if (crewMass > 900) console.log("Critical Load: Over 900");
 else if (crewMass > 700) console.log("Warning: Load is over 700");
@@ -216,6 +230,8 @@ else if (crewMass <= 500) console.log("Ship is under loaded");
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+console.log("8 - ************************************************************");
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "n/a") {
@@ -230,7 +246,7 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 
-console.log("*********************************************************");
+console.log("9 - ************************************************************");
 
 console.log(femaleCharacters);
 console.log(characters);
@@ -247,6 +263,8 @@ console.log(characters);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+console.log("10 - ***********************************************************");
 
 let character = starWarsCharacters[Math.floor(Math.random() * starWarsCharacters.length)];
 
