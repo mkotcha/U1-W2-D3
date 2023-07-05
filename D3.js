@@ -246,8 +246,6 @@ console.log(characters);
 
 let character = starWarsCharacters[Math.floor(Math.random() * starWarsCharacters.length)];
 
-console.log(starWarsCharacters);
-
 switch (character.name) {
   case "Luke Skywalker":
     console.log(
